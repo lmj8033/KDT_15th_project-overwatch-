@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Khand&family=Russo+One&family=Six+Caps&display=swap');
+/* font-family: 'Khand', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Six Caps', sans-serif; */
+
+/* RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol { 
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 25, 25, 0.4);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* MAIN MENU */
+header .main_menu {
+    display: flex;
+}
+header .main_menu p {
+    margin-left: 40px;
+    font: 40px/1 'Six Caps';
+    padding: 0px 20px;
+}
+
+header .main_menu p a {
+    color: rgb(55, 55, 216);
+}
+
+header .main_menu li {
+    margin: 0px 10px;
+}
+
+header .main_menu li a {
+    font: 20px 'Khand';
+    color: white;
+    line-height: 40px;
+}
+
+header .main_menu li a:hover {
+    color: orange;
+}
+
+/* RIGHT MAIN MENU */
+
+header .right_main_menu {
+    margin-right: 60px;
+    display: flex;
+}
+
+header .right_main_menu li {
+    margin: 0px 20px;
+}
+
+header .right_main_menu li i {
+    margin-right: 8px;
+    font-size:15px;
+}
+
+header .right_main_menu a {
+    font: 20px 'Khand';
+    color: white;
+    line-height: 40px;
+}
+
+header .right_main_menu a:hover {
+    color: orange;
+}
+
+/* SUB_MENU */
+/* VIDEO */
+
+figure {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+figure video {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+figure .sub_menu {
+    position: absolute;
+    display: flex;
+    top: 8%;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+figure .sub_menu img {
+    width: 49px;
+    height: 45px;
+}
+
+figure .sub_menu li {
+    margin: 10px 15px;
+    font: 16px 'Khand';
+}
+
+figure .sub_menu li a {
+    color: black;
+}
+
+figure .sub_menu li a:hover {
+    color: orange
+}
+
+
+figure .sub_menu li:not(:last-child):after {
+    content: "|";
+    font: 12px;
+    color: black;
+    padding-left: 30px;
+}
+
+figure .text {
+    position: absolute;
+    left: 22%;
+    top: 35%;
+    transform: translate(0, -50%);
+}
+
+figure .text .overwatch {
+    font: 130px 'Russo One';
+    color: white;
+    position: relative;
+}
+
+figure .text strong {
+    color: orange;
+}
+
+/* PLAY & BUY */
+
+figure .text ul {
+    display: flex;
+}
+    
+figure .text ul li {
+    left: 8%;
+    position: relative;
+    margin: 60px;
+}
+
+figure .text ul li .play {
+    background-color: orange;
+    padding: 1px 80px;
+}
+
+figure .text ul li a .play {
+    text-decoration: none;
+    color: white;
+    font: 30px 'Khand';
+    border-radius: 3px;
+}
+
+figure .text ul li a i {
+    margin: 8px;
+    font-size: 20px;
+}
+
+figure .text ul li .buy {
+    background-color: rgb(33, 70, 220);
+    padding: 1px 80px;
+}
+
+figure .text ul li a .buy {
+    text-decoration: none;
+    color: white;
+    font: 30px 'Khand';
+    border-radius: 3px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font: 12px/1 'arial';
+    color: black;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5vh 5vw;
+    z-index: 2;
+}
