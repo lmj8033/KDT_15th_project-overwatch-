@@ -150,12 +150,12 @@ figure .sub_menu li:not(:last-child):after {
 
 figure .text {
     position: absolute;
-    left: 21vw;
+    left: 20vw;
     top: 10vw;
 } 
 
 figure .text .overwatch {
-    font: 130px 'Russo One';
+    font: 120px 'Russo One';
     color: white;
     text-align: center;
 }
