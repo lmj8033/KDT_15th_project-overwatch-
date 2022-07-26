@@ -116,8 +116,8 @@ figure video {
 figure .sub_menu {
     position: absolute;
     display: flex;
-    top: 8%;
-    margin-left: 100px;
+    top: 5vw;
+    margin-left: 5vw;
     background-color: white;
     border-radius: 3px;
 }
