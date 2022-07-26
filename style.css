@@ -158,6 +158,7 @@ figure .text .overwatch {
     font: 120px 'Russo One';
     color: white;
     text-align: center;
+    text-shadow:-1.5px 0px black, 0px 1.5px black, 1.5px 0px black, 0px -1.5px black;
 }
 
 figure .text strong {
