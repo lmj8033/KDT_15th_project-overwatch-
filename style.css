@@ -85,6 +85,15 @@ header .right_main_menu a:hover {
     color: orange;
 }
 
+header #user {
+    display: none;
+}
+
+header #main {
+    display: none;
+}
+
+
 /* SUB_MENU */
 /* VIDEO */
 
@@ -141,15 +150,14 @@ figure .sub_menu li:not(:last-child):after {
 
 figure .text {
     position: absolute;
-    left: 22%;
-    top: 35%;
-    transform: translate(0, -50%);
-}
+    left: 21vw;
+    top: 10vw;
+} 
 
 figure .text .overwatch {
     font: 130px 'Russo One';
     color: white;
-    position: relative;
+    text-align: center;
 }
 
 figure .text strong {
@@ -163,14 +171,15 @@ figure .text ul {
 }
     
 figure .text ul li {
-    left: 8%;
     position: relative;
-    margin: 60px;
+    margin:80px;
+    text-align: center;
 }
 
 figure .text ul li .play {
     background-color: orange;
     padding: 1px 80px;
+    margin-right: 60px;
 }
 
 figure .text ul li a .play {
@@ -178,6 +187,10 @@ figure .text ul li a .play {
     color: white;
     font: 30px 'Khand';
     border-radius: 3px;
+}
+
+figure .text ul li a .play:hover {
+    color: black;
 }
 
 figure .text ul li a i {
@@ -197,6 +210,10 @@ figure .text ul li a .buy {
     border-radius: 3px;
 }
 
+figure .text ul li a .buy:hover {
+    color: black;
+}
+
 /* FOOTER */
 
 footer {
@@ -210,4 +227,131 @@ footer {
     text-align: center;
     padding: 5vh 5vw;
     z-index: 2;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 900px) {
+
+    /* RIGHT MENU */
+    header .main_menu li{
+        display: none;
+    }
+    
+    header .right_main_menu {
+        display: none;
+    }
+
+    figure .sub_menu {
+        display: none;
+    }
+
+    header #user {
+        display: block;
+        color: white;
+    }
+ 
+    header #user .btn_menu {
+        color: white;
+    }
+    
+    header #user .right_menu {
+        position: absolute;
+        right: 5vw;
+        padding: 10px 25px;
+        background-color: rgb(108, 104, 104, 0.8);
+        border: 1px solid rgb(108, 104, 104);
+        border: 10px;
+        text-align: right;
+        opacity: 1;
+        transition: 0.4s;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    header #user .right_menu.hide {
+        opacity: 0;
+    }
+
+    header #user .right_menu li {
+        padding: 7px 0px;
+        font: 17px/1 'Khand';
+    }
+
+    header #user .right_menu li a:hover {
+        color: orange;
+    }
+
+    header #user .right_menu a {
+        color: white;
+    }
+
+    header #user a i {
+        margin-right: 20px;
+        font-size: 23px;
+    }
+
+    header #user a i:hover {
+        color: orange;
+    }
+
+    /* LEFT MENU */
+    header #main .left_menu {
+        position: absolute;
+        right: 65vw;
+        padding: 10px 25px;
+        background-color: rgb(108, 104, 104, 0.8);
+        border: 1px solid rgb(108, 104, 104);
+        border: 10px;
+        text-align: right;
+        opacity: 1;
+        transition: 0.4s;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    header #main .left_menu.hidden {
+        opacity: 0;
+    }
+
+    header #main .left_menu li {
+        padding: 7px 0px;
+        font: 17px/1 'Khand';
+    }
+
+    header #main .left_menu li a:hover {
+        color: orange;
+    }
+
+    header #main .left_menu a {
+        color: #ffffff;
+    }
+
+    header #main a i {
+        margin-left: -37vw;
+        font-size: 23px;
+    }
+
+    header #main a i:hover {
+        color: orange;
+    }
+
+    header #main {
+        display: block;
+        color: white;
+    }
+ 
+    header #main .left_btn_menu {
+        color: white;
+    }
+
+    /* TEXT */
+    figure .text p {
+        font-size: 10vw;
+    }
+
+
+
+
+
 }
