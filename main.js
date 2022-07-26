@@ -25,3 +25,16 @@ function unmute() {
     const player = document.getElementById("player");
     player.muted = false;
 }
+
+// function unmute() {
+//     const player = document.getElementById("player");
+//     const btn = document.getElementById("unmutePlayerButton");
+
+//     btn.addEventListener("click",function {
+//         if(){
+//             player.muted = false;
+//         }else {
+//             player.muted = true;
+//         }
+//     })
+// }
