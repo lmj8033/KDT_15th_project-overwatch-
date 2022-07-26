@@ -20,3 +20,8 @@ mainBtn.addEventListener("click", function () {
         leftMenu.classList.add("hidden");
     }
 })
+
+function unmute() {
+    const player = document.getElementById("player");
+    player.muted = false;
+}
