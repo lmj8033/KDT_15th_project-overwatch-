@@ -155,10 +155,10 @@ figure .text {
 } 
 
 figure .text .overwatch {
-    font: 120px 'Russo One';
+    font: 8vw 'Russo One';
     color: white;
-    text-align: center;
-    text-shadow:-1.5px 0px black, 0px 1.5px black, 1.5px 0px black, 0px -1.5px black;
+    left: 50%;
+    text-shadow:-2.5px 0px black, 1px 2.5px black, 2.5px 1px black, 1px -2.5px black;
 }
 
 figure .text strong {
@@ -190,14 +190,15 @@ figure .text ul li {
 
 figure .text ul li .play {
     background-color: orange;
-    padding: 1px 80px;
-    margin-right: 60px;
+    padding: 0.2vw 4vw;
+    margin-right: 9vw;
+    left: 20vw;
 }
 
 figure .text ul li a .play {
     text-decoration: none;
     color: white;
-    font: 30px 'Khand';
+    font: 1.5vw 'Khand';
     border-radius: 3px;
 }
 
@@ -212,13 +213,13 @@ figure .text ul li a i {
 
 figure .text ul li .buy {
     background-color: rgb(33, 70, 220);
-    padding: 1px 80px;
+    padding: 0.2vw 4vw;
 }
 
 figure .text ul li a .buy {
     text-decoration: none;
     color: white;
-    font: 30px 'Khand';
+    font: 1.5vw'Khand';
     border-radius: 3px;
 }
 
